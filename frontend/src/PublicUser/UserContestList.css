@@ -1,0 +1,292 @@
+/* ==== Outer main container: orange background, top offset to avoid Navbar ==== */
+.publicuser-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4a986;
+  padding: 110px 20px 40px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ==== White centered content container ==== */
+.publicuser-content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ==== White box ==== */
+.publicuser-contest-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== Centered title ==== */
+.publicuser-contest-container h4, 
+.MuiTypography-h4 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+/* ==== Search bar section ==== */
+.publicuser-contest-header {
+  display: flex;
+  align-items: center; /* vertically center */
+  gap: 5px; /* keep only an 8px gap between the search input and button */
+  margin-bottom: 30px;
+  justify-content: center; /* horizontally center items in one row */
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.publicuser-search-bar {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 1.5%;
+}
+
+/* ==== Unified button style ==== */
+.publicuser-search-button,
+.publicuser-filter-button {
+  padding: 10px 14px;
+  background-color: #ffa680; /* Orange background */
+  border: none;
+  border-radius: 12px; /* more rounded for a softer look */
+  color: white;
+  cursor: pointer;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.15), /* outer subtle shadow */
+   -4px -4px 8px rgba(255, 255, 255, 0.5); /* inner highlight */
+  transition: all 0.3s ease;
+}
+
+/* Slightly "pop up" on hover */
+.publicuser-search-button:hover,
+.publicuser-filter-button:hover {
+  background-color: #ff864f; /* slightly darker orange */
+  box-shadow: 
+    2px 2px 5px rgba(0, 0, 0, 0.2), 
+   -2px -2px 5px rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px); /* slight lift on hover */
+}
+
+/* ==== Card container ==== */
+.publicuser-contest-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* ==== Card style ==== */
+.publicuser-contest-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.publicuser-contest-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== Right filter sidebar ==== */
+.publicuser-filter-sidebar {
+  position: fixed;
+  top: 60px;
+  right: -300px;
+  width: 275px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.publicuser-filter-sidebar.visible {
+  right: 0;
+}
+
+.publicuser-filter-sidebar .publicuser-filter-status {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.publicuser-filter-sidebar .publicuser-filter-category {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.publicuser-filter-sidebar select,
+.publicuser-filter-sidebar input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.publicuser-filter-sidebar .publicuser-filter-option {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  color: black;
+}
+
+.publicuser-filter-sidebar .publicuser-filter-option input {
+  margin-right: 8px;
+}
+
+.publicuser-filter-sidebar .publicuser-filter-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.publicuser-filter-sidebar h6 {
+  margin-top: 16px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.publicuser-filter-sidebar .publicuser-close-filter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.publicuser-close-filter {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.publicuser-close-filter:hover {
+  color: #000;
+}
+
+.publicuser-filter-sidebar h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.publicuser-filter-option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.publicuser-filter-option input {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.publicuser-filter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.publicuser-material-icons {
+  vertical-align: middle;
+}
+
+/* ==== Footer ==== */
+.publicuser-footer {
+  margin-top: 60px;
+  background-color: #642d1c;
+  color: white;
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* ==== Responsive adjustments ==== */
+@media (max-width: 768px) {
+  .publicuser-search-bar {
+    max-width: 100%;
+  }
+
+  .publicuser-contest-card {
+    width: 100%;
+  }
+
+  .publicuser-contest-container {
+    padding: 20px;
+  }
+}
+
+/* New "View Related Works" button style */
+.view-work-button {
+  background-color: #FFA500; /* Orange background */
+  color: #632713 !important; /* Brown text */
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: breathing 2s infinite;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.view-work-button:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+/* Breathing animation effect */
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

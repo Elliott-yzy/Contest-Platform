@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: file-service
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848
+
+minio:
+  internal-endpoint: http://minio:9000
+  public-endpoint: http://localhost:9000
+  access-key: minio
+  secret-key: minio123

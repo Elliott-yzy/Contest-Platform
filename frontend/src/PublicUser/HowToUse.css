@@ -1,0 +1,73 @@
+/* Overall background */
+.how-to-use-container {
+  background: #ffa680; 
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Centered middle box */
+.how-to-use-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Top white box (new) */
+.how-to-use-header-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Card content */
+.how-to-use-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.how-to-use-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #6f1b00;
+  margin-bottom: 10px;
+}
+
+.how-to-use-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.how-to-use-section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #6f1b00;
+}
+
+.how-to-use-list {
+  list-style: disc inside;
+  padding-left: 0;
+  color: #333;
+}
+
+.how-to-use-list li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.how-to-use-list strong {
+  color: #000;
+}
+
+.how-to-use-list em {
+  font-style: italic;
+  color: #6f1b00;
+}

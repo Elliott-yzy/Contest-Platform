@@ -1,0 +1,20 @@
+server:
+  port: 18083
+
+spring:
+  application:
+    name: file-service-test
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+minio:
+  internal-endpoint: http://localhost:9001
+  public-endpoint: http://localhost:9001
+  access-key: minio-test
+  secret-key: minio123-test

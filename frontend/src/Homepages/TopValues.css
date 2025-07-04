@@ -1,0 +1,66 @@
+.top-values {
+  text-align: center;
+  padding: 3rem 5%;
+  /* Key: use a linear gradient for a diagonal split */
+  background: linear-gradient(
+    135deg,       /* Adjust the angle to control the diagonal direction */
+    #ffa680 50%,  /* Left 50% is #ffa680 */
+    #6f1b00 50%   /* Right 50% is #6f1b00 */
+  );
+  color: #fff;  /* Use light-colored text for readability on dark backgrounds */
+}
+
+.top-values__title {
+  margin-top: 5%;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.top-values__subtitle {
+  color: #eee; /* Changed from #777 to improve text visibility on dark areas */
+  margin-bottom: 2rem;
+}
+
+.top-values__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.top-values__item {
+  width: 200px;
+  text-align: center;
+}
+
+.top-values__item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.top-values__buttons {
+  display: flex;           /* ✅ Horizontal layout */
+  justify-content: center; /* ✅ Center align */
+  gap: 16px;               /* ✅ Add spacing between buttons */
+  margin-top: 2rem;        /* ✅ Create separation from the content above */
+}
+
+.top-values__button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #6f1b00;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Highlight on hover */
+.top-values__button:hover {
+  background-color: #ffe0b2; /* Light orange */
+  transform: translateY(-2px);
+}

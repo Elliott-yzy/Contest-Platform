@@ -1,0 +1,74 @@
+.publicuser-comments-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* margin-left: 20%;
+  margin-right: 10%; */
+}
+
+.publicuser-comments-page-content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.publicuser-comments-section {
+  flex: 1;
+  /* margin-left: 20px; */
+}
+
+/* Sidebar defaults to left, no additional settings needed */
+.publicuser-Right-comment-place {
+  flex: 1;
+}
+
+.publicuser-comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* New outer container, with background set to white */
+.publicuser-wrapper {
+  background-color: #ffffff;  /* White background */
+  border: 5px solid #000000;  /* Black border */
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 20px;        /* Rounded border */
+}
+
+/* Fix comments list height, enable vertical scrolling */
+.publicuser-comments-list {
+  margin-left: 20%;
+  margin-right: 10%;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.publicuser-add-comment-section {
+  margin-left: 20%;
+  margin-right: 10%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.publicuser-add-comment-section .MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+.publicuser-MuiTypography-root {
+  margin-bottom: 20px;
+}
+
+.publicuser-MuiPaper-root {
+  margin-bottom: 15px;
+}
+
+.publicuser-join-button:hover {
+  background-color: #6f1b00 !important;
+}

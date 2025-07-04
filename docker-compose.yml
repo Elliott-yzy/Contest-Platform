@@ -1,0 +1,224 @@
+services:
+  mysql:
+    image: mysql:8.0.42
+    container_name: 9900-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.mysql-data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    restart: always
+    networks:
+      - my-network
+  redis:
+    image: redis:7.4.3
+    container_name: 9900-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - my-network
+    volumes:
+      - ./.redis-data:/data
+  rabbitmq:
+    image: rabbitmq:4.0.7-management
+    container_name: 9900-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - ./.rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - my-network
+  nacos:
+    image: nacos/nacos-server:v2.5.1
+    container_name: 9900-nacos
+    ports:
+      - "8848:8848"
+    volumes:
+      - ./.nacos-data:/home/nacos/data
+    environment:
+      - MODE=standalone
+      - PREFER_HOST_MODE=hostname
+      - TZ=Australia/Sydney
+    networks:
+      - my-network
+
+  minio:
+    image: minio/minio:RELEASE.2025-04-22T22-12-26Z
+    container_name: 9900-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ./.minio-data:/data
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    command: server /data --console-address ":9001"
+    networks:
+      - my-network
+    restart: always
+
+# This is the main API gateway for the backend services
+  backend-api-gateway:
+    container_name: backend-api-gateway
+    build:
+      context: .
+      dockerfile: backend/api-gateway/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+    environment:
+      - JWT_SECRET=${JWT_SECRET}
+    networks:
+      - my-network
+
+  backend-user-service:
+    container_name: backend-user-service
+    build:
+      context: .
+      dockerfile: backend/user-service/Dockerfile
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+    environment:
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+
+  backend-competition-service:
+    container_name: backend-competition-service
+    build:
+      context: .
+      dockerfile: backend/competition-service/Dockerfile
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+
+  backend-file-service:
+    container_name: backend-file-service
+    build:
+      context: .
+      dockerfile: backend/file-service/Dockerfile
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+
+  backend-registration-service:
+    container_name: backend-registration-service
+    build:
+      context: .
+      dockerfile: backend/registration-service/Dockerfile
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+
+  backend-interaction-service:
+    container_name: backend-interaction-service
+    build:
+      context: .
+      dockerfile: backend/interaction-service/Dockerfile
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+
+  backend-judge-service:
+    container_name: backend-judge-service
+    build:
+      context: .
+      dockerfile: backend/judge-service/Dockerfile
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - mysql
+      - redis
+      - rabbitmq
+      - nacos
+      - minio
+
+  frontend-web:
+    container_name: frontend-web
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - my-network
+    depends_on:
+      - backend-api-gateway
+      - backend-user-service
+      - backend-competition-service
+      - backend-file-service
+      - backend-registration-service
+      - backend-interaction-service
+      - backend-judge-service
+
+  jenkins:
+    image: jenkins/jenkins:jdk21
+    container_name: jenkins
+    user: root
+    privileged: true
+    ports:
+      - "8888:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins
+    networks:
+      - my-network
+    restart: always
+
+volumes:
+  jenkins_home:
+
+networks:
+  my-network:

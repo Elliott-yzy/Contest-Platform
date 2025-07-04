@@ -1,0 +1,43 @@
+/* Main scroll container: uses scroll-snap for alignment */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Each section occupies a full viewport */
+.scroll-section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* Common pagination dot styles */
+.pagination-dots {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+
+/* Left-side pagination dots */
+.pagination-dots.left {
+  right: 40px;
+}
+
+/* Dot styles */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Active dot styles */
+.dot.active {
+  background-color: #333;
+}

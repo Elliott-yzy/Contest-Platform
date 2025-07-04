@@ -1,0 +1,98 @@
+.rating-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1000px;
+  margin-left: 280px;
+  margin-top: 27px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 5px solid #000000;
+}
+
+/* Right main content area */
+.rating-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Page title */
+.page-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Table styles */
+.rating-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  /* If using rounded corners, hide overflow */
+}
+
+/* Table header styles */
+.rating-table thead {
+  background-color: #e2e8f0;
+  /* Light gray-blue, customizable */
+}
+
+.rating-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table body cells */
+.rating-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove bottom border on last row (optional) */
+.rating-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover row highlight (optional) */
+.rating-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.rating-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 4px;
+}

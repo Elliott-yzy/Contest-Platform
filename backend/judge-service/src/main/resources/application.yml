@@ -1,0 +1,52 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: judge-service
+  datasource:
+    url: jdbc:mysql://mysql:3306/project_contest_platform?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      initialization-fail-timeout: -1
+      connection-timeout: 30000
+      validation-timeout: 5000
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 600000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+springdoc:
+  swagger-ui:
+    path: /doc.html
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: "default"
+      paths-to-match: "/**"
+      packages-to-scan: com.w16a.danish.judge.controller
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

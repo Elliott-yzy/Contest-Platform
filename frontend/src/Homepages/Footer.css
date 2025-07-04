@@ -1,0 +1,299 @@
+.footer {
+  margin-top: auto;
+  padding: 3rem 5%;  
+  background: radial-gradient(circle at left 37%, #6f1b00 150px, #ffa680 150px);
+  font-size: 0.9rem;
+  color: #fff;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* ✅ Allow absolute positioning inside the footer */
+}
+
+/* Floating image above the semicircle */
+.footer__half-circle-image {
+  position: absolute;  /* Absolute positioning */
+  top: 20%;            /* 20% down from the top of the footer */
+  left: 10%;           /* 10% from the left, positioned above the semicircle */
+  transform: translate(-50%, -50%); /* Center alignment */
+  width: 300px;        /* Size adjustable as needed */
+  height: auto;
+  z-index: 2;          /* Ensure it stays above the semicircle */
+  pointer-events: none; /* Do not interfere with mouse clicks */
+}
+
+/* Top section - logo and navigation */
+.footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  gap: 100px;
+  padding-left: 40px;
+}
+
+/* Logo styles */
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+/* Main navigation columns */
+.footer__columns {
+  margin-top: 30%;
+  display: flex;
+  gap: 100px;
+  text-align: left;
+}
+
+/* Column titles */
+.footer__column h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* List navigation */
+.footer__column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.footer__column ul li:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Social media section */
+.footer__social {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Social icons */
+.footer__icons {
+  margin-top: 10%;
+  display: flex;
+  gap: 12px;
+}
+
+.footer__icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.footer__icons a:hover {
+  background-color: #ddd;
+}
+
+/* Bottom navigation */
+.footer__bottom {
+  text-align: center;
+  border-top: 1px solid #884400;
+  padding-top: 20px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer__links li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer__bottom p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+.footer__half-circle-image {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 20vw;          /* 🔥 Use 20% of viewport width for responsiveness */
+  max-width: 200px;     /* 🔥 Maximum width 200px */
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.footer__half-circle-image {
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  max-width: 190px;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  
+  /* Animation */
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+}
+
+
+/* Hero image itself: fill the .hero__image-wrapper while preserving the border radius */
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and crop overflow */
+  display: block;
+}
+
+/* Text and button area: positioned above the image */
+.hero__content {
+  position: relative; 
+  z-index: 1;         /* Ensure text is above the image */
+  text-align: center; /* Center-align text */
+  max-width: 70%;     /* Control text area width as needed */
+}
+
+/* Original text and button styles remain unchanged */
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero__button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.hero__button:hover {
+  background-color: #eee;
+}
+
+
+/* Container for positioning text */
+.footer__text-area {
+  position: absolute;
+  top: 37%;   /* Same vertical position as the image */
+  left: 25%;  /* To the right of the image; adjust as needed */
+  transform: translate(0, -50%);
+  z-index: 3; /* Ensure it is above the image */
+}
+
+.footer__icon-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer__icon-title span {
+  margin-right: 8px;
+  font-size: 2rem; /* Slightly larger icon */
+}
+
+/* Right-side image (floating + breathing scale) */
+.footer__right-image {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  top: 22%;
+  right: 6%;
+  pointer-events: none; /* Avoid blocking interactions */
+
+  /* Animation: floating + scaling */
+  animation: floatScale 4s ease-in-out infinite;
+}
+
+/* Define keyframe animation */
+@keyframes floatScale {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05); /* Float up and slightly enlarge */
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
+/* Middle text area */
+.footer__text-area {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__icon-title {
+  display: flex;
+  flex-direction: column; /* Key: vertical arrangement */
+  align-items: flex-start;     /* Horizontal centering */
+  justify-content: center; /* Vertical centering */
+}
+
+.footer__icon {
+  font-size: 2rem; /* Make icon larger */
+  margin-bottom: 4px; /* Add some space between icon and text */
+}
+
+.footer__text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

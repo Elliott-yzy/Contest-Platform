@@ -1,0 +1,299 @@
+/* Outer container, includes sidebar and main content */
+.Participantprofile-container {
+  display: flex;
+  min-height: calc(100vh - 27px);
+  /* Make content fill the screen, but start from 90px down */
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  /* Center the container */
+  padding: 40px !important;
+  /* Provide padding for inner content */
+  max-width: 1000px !important;
+  /* Limit maximum width */
+  margin-left: 280px !important;
+  /* Ensure it is not covered by the sidebar */
+  margin-top: 27px !important;
+  /* Make it start from 90px down */
+  border-radius: 16px;
+  /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Add shadow for depth */
+  border: 5px solid #000000;
+  /* Black border */
+}
+
+/* Left sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #cce0f4;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Right main content area */
+.Participantprofile-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Profile header area */
+.profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #b0c4de;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+/* Overall form layout */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.profile-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.profile-form input,
+.profile-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.profile-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffa680;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #6f1b00;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  transform: scale(1.05);
+  /* Hover scale effect */
+}
+
+.active-link {
+  background-color: #6f1b00;
+  color: #fff;
+  border-color: #6f1b00;
+}
+
+.topbar-content {
+  width: 100%;
+  padding: 0;
+}
+
+.topbar-rect {
+  background-color: #d3d3d3;
+  /* Light gray background */
+  padding: 10px;
+  /* Padding */
+  width: 100%;
+  /* Full width */
+  box-sizing: border-box;
+  /* Include padding in width */
+  text-align: center;
+  /* Center text */
+  margin: 0;
+  /* Remove default margin */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.profile-badge {
+  background: linear-gradient(to bottom right, #ffa680, #f9f9f9);
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  max-width: 500px;
+  margin: 30px auto;
+  position: relative;
+  animation: swing 4s infinite ease-in-out;
+}
+
+/* Small hanging bar */
+.profile-badge::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Swing animation */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Maintain input layout */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Edit icon style */
+.edit-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.edit-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Save button */
+.save-button {
+  background: linear-gradient(45deg, #ffa680, #fad0c4);
+  color: white;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.save-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 154, 158, 0.5);
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(244, 67, 54, 0.5);
+}
+
+.profile-form-columns {
+  display: flex;
+  gap: 40px;
+  /* Spacing between columns */
+  margin-top: 20px;
+}
+
+.form-left,
+.form-right {
+  flex: 1;
+  /* Equal width columns */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-left input,
+.form-right input,
+.form-right textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.save-button,
+.delete-button {
+  margin-top: 10px;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}

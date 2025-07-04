@@ -1,0 +1,60 @@
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.625rem 2.5rem;
+  margin: 1rem auto 0;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.welcome-line {
+  font-weight: 600;
+  color: #333;
+}
+
+.email-line {
+  color: #666;
+  margin-top: 0.1rem;
+  font-size: 0.5rem;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.logout-icon {
+  font-size: 1.5rem;
+  color: #555;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.logout-icon:hover {
+  color: rgb(76, 0, 255);
+}

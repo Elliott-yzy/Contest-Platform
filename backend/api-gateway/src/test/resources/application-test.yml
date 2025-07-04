@@ -1,0 +1,30 @@
+server:
+  port: 0 # Use random available port for tests
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: http://localhost:9999 # Point to local WireMock server
+          predicates:
+            - Path=/users/**
+    nacos:
+      discovery:
+        enabled: false # Disable Nacos service discovery during tests
+
+jwt:
+  secret: "test-secret-key" # Secret used only for testing
+  expiration: 86400000 # Token expiration time (1 day in ms)
+  public-urls: # Public URLs that should bypass JWT authentication
+    - /users/login
+    - /users/register
+    - /users/oauth/**
+    - /competitions/*
+    - /submissions/public/**
+    - /interactions/comments/list
+    - /teams/public/**
+    - /dashboard/public/**

@@ -1,0 +1,72 @@
+.public-team-list-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    min-height: 70vh;
+  }
+  
+  .public-back-button {
+    color: #632713;
+    border: 1px solid #632713;
+    padding: 6px 12px;
+    text-transform: none;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+  }
+  
+  .public-back-button:hover {
+    background-color: #f4e1d2;
+  }
+  
+  .public-page-title {
+    text-align: center;
+    color: #632713;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .public-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .public-team-card {
+    background-color: #e6a582;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .public-team-card:hover {
+    background-color: #d88e6d; 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+  
+  .public-team-card:active {
+    background-color: #f2b091; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+  
+  
