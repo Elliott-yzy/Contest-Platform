@@ -1,0 +1,71 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  /* Adjust background color as needed */
+  width: 100%;
+  margin: 0 auto;
+  /* Center the container */
+  padding: 0px 40px;
+  /* Leave 20px horizontal padding on each side, adjust as needed */
+  max-width: 1200px;
+  /* Optional: limit maximum width */
+  margin-top: 20px;
+  border-radius: 16px;
+  /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Add a shadow for depth */
+}
+
+.topbar-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Spacing between avatar and logout button */
+}
+
+.logout-container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logout-icon {
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+  color: rgb(76, 0, 255);
+}
+
+/* Text background rectangle */
+.topbar-rect {
+  background-color: transparent !important;
+  /* Force remove background color */
+  margin: 0;
+  /* Prevent extra margins */
+  padding: 0;
+}

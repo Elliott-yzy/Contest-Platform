@@ -1,0 +1,119 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  data:
+    redis:
+      host: redis
+      port: 6379
+      timeout: 3000
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 1
+          max-wait: 5000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**
+        - id: competition-service
+          uri: lb://competition-service
+          predicates:
+            - Path=/competitions/**
+        - id: file-service
+          uri: lb://file-service
+          predicates:
+            - Path=/files/**
+        - id: registration-service
+          uri: lb://registration-service
+          predicates:
+            - Path=/registrations/**
+        - id: submission-routes
+          uri: lb://registration-service
+          predicates:
+            - Path=/submissions/**
+        - id: interaction-service
+          uri: lb://interaction-service
+          predicates:
+            - Path=/interactions/**
+        - id: team-routes
+          uri: lb://user-service
+          predicates:
+            - Path=/teams/**
+        - id: judge-service
+          uri: lb://judge-service
+          predicates:
+            - Path=/judges/**
+        - id: winners-routes
+          uri: lb://judge-service
+          predicates:
+            - Path=/winners/**
+        - id: dashboard-service
+          uri: lb://judge-service
+          predicates:
+            - Path=/dashboard/**
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000
+  public-urls:
+    - /user-service/v3/api-docs
+    - /competition-service/v3/api-docs
+    - /registration-service/v3/api-docs
+    - /interaction-service/v3/api-docs
+    - /judge-service/v3/api-docs
+    - /users/oauth/github
+    - /users/oauth/callback/github
+    - /users/oauth/google
+    - /users/oauth/callback/google
+    - /users/register
+    - /users/login
+    - /users/forgot-password
+    - /users/reset-password
+    - /competitions/*
+    - /submissions/public/approved
+    - /submissions/is-organizer
+    - /interactions/comments/list
+    - /interactions/votes/count
+    - /teams/public/*
+    - /registrations/public/**
+    - /submissions/public/teams/**
+    - /winners/public-list
+    - /dashboard/public/**
+
+knife4j:
+  gateway:
+    enabled: true
+    routes:
+      - name: User-Service
+        url: /user-service/v3/api-docs
+        service-name: user-service
+        order: 1
+      - name: Competition-Service
+        url: /competition-service/v3/api-docs
+        service-name: competition-service
+        order: 2
+      - name: Registration-Service
+        url: /registration-service/v3/api-docs
+        service-name: registration-service
+        order: 3
+      - name: Interaction-Service
+        url: /interaction-service/v3/api-docs
+        service-name: interaction-service
+        order: 4
+      - name: Judge-Service
+        url: /judge-service/v3/api-docs
+        service-name: judge-service
+        order: 5

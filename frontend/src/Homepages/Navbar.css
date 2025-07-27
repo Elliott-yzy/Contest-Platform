@@ -1,0 +1,151 @@
+/* ==== Top white floating navbar ==== */
+.homepage-navbar {
+  position: fixed;
+  top: 20px;                /* Slightly down from the top of the page */
+  left: 50%;
+  transform: translateX(-50%); /* ✅ Centered! A very standard approach */
+
+  width: 90%;               /* Occupies 90% of the width */
+  max-width: 1400px;        /* But max width is 1400px to prevent it from being too wide on large screens */
+  
+  height: 70px;             /* Slightly taller for a more spacious look */
+  padding: 0 30px;          /* Horizontal padding */
+  background-color: #fff;   /* White background */
+  border-radius: 20px;      /* More pronounced rounded corners, like a cream block */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;           /* High z-index to overlay other elements */
+
+  font-family: 'Poppins', sans-serif; /* A more modern font */
+}
+
+/* Logo section */
+.homepage-navbar__logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navigation links */
+.homepage-navbar__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each link */
+.homepage-navbar__links li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Search box */
+.homepage-navbar__search {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 6px 12px;
+  margin-right: 40px;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.homepage-navbar__search input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: #333;
+  width: 140px;
+}
+
+.homepage-navbar__search button {
+  background-color: #ffa680;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.2s;
+}
+
+.homepage-navbar__search button:hover {
+  background-color: #6f1b00;
+}
+
+/* Login and register buttons */
+.homepage-login-btn,
+.homepage-register-btn {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.homepage-login-btn:hover,
+.homepage-register-btn:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+.homepage-login-btn:active,
+.homepage-register-btn:active {
+  transform: scale(0.95);
+}
+
+/* Links */
+.homepage-navbar-link {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 16px;
+}
+
+.homepage-navbar-link:hover {
+  color: #333;
+}
+
+/* Orange Contest button */
+.homepage-navbar-contest-button {
+  background-color: #ffa680;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.homepage-navbar-contest-button:hover {
+  background-color: #6f1b00;
+}
+
+.role-select-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centered! */
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10001; /* Slightly higher than the navbar */
+}

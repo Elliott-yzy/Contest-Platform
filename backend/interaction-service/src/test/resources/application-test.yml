@@ -1,0 +1,42 @@
+server:
+  port: 18085
+
+spring:
+  application:
+    name: interaction-service-test
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    hikari:
+      initialization-fail-timeout: -1
+      connection-timeout: 30000
+      validation-timeout: 5000
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 600000
+
+  cloud:
+    nacos:
+      discovery:
+        enabled: false
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false
+
+knife4j:
+  enable: false

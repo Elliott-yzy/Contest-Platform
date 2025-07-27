@@ -1,0 +1,21 @@
+# ignore all files
+.mysql-data/
+.nacos-data/
+.redis-data/
+.rabbitmq-data/
+.minio-data/
+logs/
+mysql-init/
+
+frontend/
+
+# Maven build cache
+**/target/
+*.jar
+*.war
+*.ear
+
+.idea/
+
+.gitignore
+*.log

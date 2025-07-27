@@ -1,0 +1,112 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://mysql:3306/project_contest_platform?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      initialization-fail-timeout: -1
+      connection-timeout: 30000
+      validation-timeout: 5000
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 600000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  data:
+    redis:
+      host: redis
+      port: 6379
+      timeout: 3000
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 1
+          max-wait: 5000
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: auto
+        concurrency: 1
+        max-concurrency: 5
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000
+
+github:
+  client-id: ${GITHUB_CLIENT_ID}
+  client-secret: ${GITHUB_CLIENT_SECRET}
+  authorize-url: https://github.com/login/oauth/authorize
+  redirect-uri: http://localhost:8080/users/oauth/callback/github
+
+google:
+  client-id: ${GOOGLE_CLIENT_ID}
+  client-secret: ${GOOGLE_CLIENT_SECRET}
+  redirect-uri: http://localhost:8080/users/oauth/callback/google
+  authorize-url: https://accounts.google.com/o/oauth2/v2/auth
+  token-url: https://oauth2.googleapis.com/token
+  user-info-url: https://www.googleapis.com/oauth2/v2/userinfo
+
+frontend:
+  base-url: http://localhost:3000
+  reset-password-path: /reset-password
+  email-verification-path: /verify-email
+  oauth-callback-path: /oauth/callback
+  competition-path: /project
+  competition-judge-path: /rating
+
+springdoc:
+  swagger-ui:
+    path: /doc.html
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: "default"
+      paths-to-match: "/users/**"
+      packages-to-scan: com.w16a.danish.user.controller
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

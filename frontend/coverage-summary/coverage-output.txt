@@ -1,0 +1,2527 @@
+PASS src/Tests/Admintests/AdminCompetitionsManage.test.js (8.783 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      75 | describe("AdminCompetitionsManage", () => {
+      76 |   it("renders and shows loading initially", async () => {
+    > 77 |     render(
+         |           ^
+      78 |       <BrowserRouter>
+      79 |         <AdminCompetitionsManage />
+      80 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Admintests/AdminCompetitionsManage.test.js:77:11)
+      at call (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      75 | describe("AdminCompetitionsManage", () => {
+      76 |   it("renders and shows loading initially", async () => {
+    > 77 |     render(
+         |           ^
+      78 |       <BrowserRouter>
+      79 |         <AdminCompetitionsManage />
+      80 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Admintests/AdminCompetitionsManage.test.js:77:11)
+      at call (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminCompetitionsManage.test.js:2:1)
+
+    console.error
+      An update to AdminCompetitionsManage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+       97 |       if (response.ok) {
+       98 |         alert("Competition deleted successfully.");
+    >  99 |         setCompetitions((prev) => prev.filter((c) => c.id !== compId));
+          |         ^
+      100 |       } else {
+      101 |         const data = await response.json();
+      102 |         alert(data.message || "Failed to delete competition");
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setCompetitions (src/Admin/AdminCompetitionsManage.js:99:9)
+      at call (src/Admin/AdminCompetitionsManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminCompetitionsManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminCompetitionsManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminCompetitionsManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminCompetitionsManage.js:2:1)
+
+PASS src/Tests/Admintests/AdminAccountManage.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      53 | describe("AdminAccountManage", () => {
+      54 |   it("renders and shows loading initially", async () => {
+    > 55 |     render(
+         |           ^
+      56 |       <BrowserRouter>
+      57 |         <AdminAccountManage />
+      58 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Admintests/AdminAccountManage.test.js:55:11)
+      at call (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      53 | describe("AdminAccountManage", () => {
+      54 |   it("renders and shows loading initially", async () => {
+    > 55 |     render(
+         |           ^
+      56 |       <BrowserRouter>
+      57 |         <AdminAccountManage />
+      58 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Admintests/AdminAccountManage.test.js:55:11)
+      at call (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminAccountManage.test.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Admin/TopBar.js:36:17)
+      at call (src/Admin/TopBar.js:2:1)
+      at Generator.tryCatch (src/Admin/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Admin/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Admin/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Admin/TopBar.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Admin/TopBar.js:36:17)
+      at call (src/Admin/TopBar.js:2:1)
+      at Generator.tryCatch (src/Admin/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Admin/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Admin/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Admin/TopBar.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/TopBar.js:2:1)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Admin/TopBar.js:36:17)
+      at call (src/Admin/TopBar.js:2:1)
+      at Generator.tryCatch (src/Admin/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Admin/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Admin/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Admin/TopBar.js:2:1)
+
+    console.error
+      Error: Not implemented: window.alert
+          at module.exports (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/browser/Window.js:870:7
+          at alert (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/AdminAccountManage.js:95:9)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/AdminAccountManage.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/AdminAccountManage.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/AdminAccountManage.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/AdminAccountManage.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Admin/AdminAccountManage.js:2:1) {
+        type: 'not implemented'
+      }
+
+      93 |
+      94 |       if (response.ok) {
+    > 95 |         alert("User deleted successfully.");
+         |         ^
+      96 |         fetchUsers(page, roleFilter, keyword);
+      97 |       } else {
+      98 |         const err = await response.json();
+
+      at VirtualConsole.<anonymous> (node_modules/jest-environment-jsdom/build/index.js:65:23)
+      at alert (src/Admin/AdminAccountManage.js:95:9)
+      at call (src/Admin/AdminAccountManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminAccountManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+
+    console.error
+      An update to AdminAccountManage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+      29 |
+      30 |   const fetchUsers = async (currentPage = 1, role = "", keyword = "") => {
+    > 31 |     setLoading(true);
+         |     ^
+      32 |     try {
+      33 |       const params = new URLSearchParams({
+      34 |         page: currentPage,
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setLoading (src/Admin/AdminAccountManage.js:31:5)
+      at call (src/Admin/AdminAccountManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminAccountManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at _next (src/Admin/AdminAccountManage.js:2:1)
+      at src/Admin/AdminAccountManage.js:2:1
+      at apply (src/Admin/AdminAccountManage.js:30:19)
+      at fetchUsers (src/Admin/AdminAccountManage.js:96:9)
+      at call (src/Admin/AdminAccountManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminAccountManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+
+    console.error
+      An update to AdminAccountManage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+      54 |       const data = await response.json();
+      55 |       if (response.ok) {
+    > 56 |         setUsers(data.data);
+         |         ^
+      57 |         setTotalPages(data.pages);
+      58 |       } else {
+      59 |         alert(data.message || "Failed to fetch users");
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setUsers (src/Admin/AdminAccountManage.js:56:9)
+      at call (src/Admin/AdminAccountManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminAccountManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+
+    console.error
+      An update to AdminAccountManage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+      55 |       if (response.ok) {
+      56 |         setUsers(data.data);
+    > 57 |         setTotalPages(data.pages);
+         |         ^
+      58 |       } else {
+      59 |         alert(data.message || "Failed to fetch users");
+      60 |       }
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setTotalPages (src/Admin/AdminAccountManage.js:57:9)
+      at call (src/Admin/AdminAccountManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminAccountManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+
+    console.error
+      An update to AdminAccountManage inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+      62 |       console.error("Error fetching users:", error);
+      63 |     } finally {
+    > 64 |       setLoading(false);
+         |       ^
+      65 |     }
+      66 |   };
+      67 |
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setLoading (src/Admin/AdminAccountManage.js:64:7)
+      at call (src/Admin/AdminAccountManage.js:2:1)
+      at Generator.tryCatch (src/Admin/AdminAccountManage.js:2:1)
+      at Generator._invoke [as next] (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+      at asyncGeneratorStep (src/Admin/AdminAccountManage.js:2:1)
+
+PASS src/Tests/Organizertests/OrganizerAddJudge.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      58 | // 渲染器
+      59 | const renderWithRouter = () => {
+    > 60 |   render(
+         |         ^
+      61 |     <MemoryRouter initialEntries={["/organizer-add-judge/test-competition"]}>
+      62 |       <Routes>
+      63 |         <Route path="/organizer-add-judge/:competitionId" element={<OrganizerAddJudge />} />
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerAddJudge.test.js:60:9)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerAddJudge.test.js:71:5)
+      at call (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      58 | // 渲染器
+      59 | const renderWithRouter = () => {
+    > 60 |   render(
+         |         ^
+      61 |     <MemoryRouter initialEntries={["/organizer-add-judge/test-competition"]}>
+      62 |       <Routes>
+      63 |         <Route path="/organizer-add-judge/:competitionId" element={<OrganizerAddJudge />} />
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerAddJudge.test.js:60:9)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerAddJudge.test.js:71:5)
+      at call (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerAddJudge.test.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at runNextTicks (node:internal/process/task_queues:60:5)
+          at listOnTimeout (node:internal/timers:545:9)
+          at processTimers (node:internal/timers:519:7)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+PASS src/Tests/Organizertests/OrganizerProfile.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      44 |
+      45 | const renderProfile = () => {
+    > 46 |   render(
+         |         ^
+      47 |     <MemoryRouter>
+      48 |       <OrganizerProfile />
+      49 |     </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderProfile (src/Tests/Organizertests/OrganizerProfile.test.js:46:9)
+      at renderProfile (src/Tests/Organizertests/OrganizerProfile.test.js:55:5)
+      at call (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      44 |
+      45 | const renderProfile = () => {
+    > 46 |   render(
+         |         ^
+      47 |     <MemoryRouter>
+      48 |       <OrganizerProfile />
+      49 |     </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderProfile (src/Tests/Organizertests/OrganizerProfile.test.js:46:9)
+      at renderProfile (src/Tests/Organizertests/OrganizerProfile.test.js:55:5)
+      at call (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerProfile.test.js:2:1)
+
+PASS src/Tests/Admintests/AdminDashboard.test.js (10.877 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      54 | describe("AdminDashboard", () => {
+      55 |   it("renders and shows loading initially", async () => {
+    > 56 |     render(
+         |           ^
+      57 |       <BrowserRouter>
+      58 |         <AdminDashboard />
+      59 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Admintests/AdminDashboard.test.js:56:11)
+      at call (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      54 | describe("AdminDashboard", () => {
+      55 |   it("renders and shows loading initially", async () => {
+    > 56 |     render(
+         |           ^
+      57 |       <BrowserRouter>
+      58 |         <AdminDashboard />
+      59 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Admintests/AdminDashboard.test.js:56:11)
+      at call (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminDashboard.test.js:2:1)
+
+PASS src/Tests/Organizertests/OrganizerDashboard.test.js (11.028 s)
+  ● Console
+
+    console.error
+      Unknown API called: http://localhost:8080/users/profile
+
+      54 |     }
+      55 |
+    > 56 |     console.error("Unknown API called:", url);
+         |             ^
+      57 |     return Promise.resolve({
+      58 |       ok: false,
+      59 |       json: () => Promise.reject(new Error("Unknown API")),
+
+      at error (src/Tests/Organizertests/OrganizerDashboard.test.js:56:13)
+      at fetch (src/Organizer/TopBar.js:26:32)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at _next (src/Organizer/TopBar.js:2:1)
+      at src/Organizer/TopBar.js:2:1
+      at apply (src/Organizer/TopBar.js:24:26)
+      at fetchUserAvatar (src/Organizer/TopBar.js:40:5)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerDashboard.test.js:70:11)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      68 | describe("OrganizerDashboard", () => {
+      69 |   it("renders loading spinner initially", () => {
+    > 70 |     render(
+         |           ^
+      71 |       <BrowserRouter>
+      72 |         <OrganizerDashboard />
+      73 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerDashboard.test.js:70:11)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      68 | describe("OrganizerDashboard", () => {
+      69 |   it("renders loading spinner initially", () => {
+    > 70 |     render(
+         |           ^
+      71 |       <BrowserRouter>
+      72 |         <OrganizerDashboard />
+      73 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerDashboard.test.js:70:11)
+
+    console.error
+      Failed to fetch user avatar: Error: Unknown API
+          at Object.json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/OrganizerDashboard.test.js:59:34)
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as throw] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      An update to OrganizerDashboard inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+      100 |         );
+      101 |
+    > 102 |         setStats(list);
+          |         ^
+      103 |       } catch (e) {
+      104 |         console.error("Dashboard fetch error:", e);
+      105 |       } finally {
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setStats (src/Organizer/Dashboard.js:102:9)
+      at call (src/Organizer/Dashboard.js:2:1)
+      at Generator.tryCatch (src/Organizer/Dashboard.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/Dashboard.js:2:1)
+      at asyncGeneratorStep (src/Organizer/Dashboard.js:2:1)
+      at asyncGeneratorStep (src/Organizer/Dashboard.js:2:1)
+
+    console.error
+      An update to OrganizerDashboard inside a test was not wrapped in act(...).
+      
+      When testing, code that causes React state updates should be wrapped into act(...):
+      
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+      
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+      104 |         console.error("Dashboard fetch error:", e);
+      105 |       } finally {
+    > 106 |         setLoading(false);
+          |         ^
+      107 |       }
+      108 |     })();
+      109 |   }, []);
+
+      at error (node_modules/react-dom/cjs/react-dom-client.development.js:16023:19)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:16022:9)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom-client.development.js:14396:11)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:6969:13)
+      at dispatchSetStateInternal (node_modules/react-dom/cjs/react-dom-client.development.js:6927:7)
+      at setLoading (src/Organizer/Dashboard.js:106:9)
+      at call (src/Organizer/Dashboard.js:2:1)
+      at Generator.tryCatch (src/Organizer/Dashboard.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/Dashboard.js:2:1)
+      at asyncGeneratorStep (src/Organizer/Dashboard.js:2:1)
+      at asyncGeneratorStep (src/Organizer/Dashboard.js:2:1)
+
+    console.error
+      Unknown API called: http://localhost:8080/users/profile
+
+      54 |     }
+      55 |
+    > 56 |     console.error("Unknown API called:", url);
+         |             ^
+      57 |     return Promise.resolve({
+      58 |       ok: false,
+      59 |       json: () => Promise.reject(new Error("Unknown API")),
+
+      at error (src/Tests/Organizertests/OrganizerDashboard.test.js:56:13)
+      at fetch (src/Organizer/TopBar.js:26:32)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at _next (src/Organizer/TopBar.js:2:1)
+      at src/Organizer/TopBar.js:2:1
+      at apply (src/Organizer/TopBar.js:24:26)
+      at fetchUserAvatar (src/Organizer/TopBar.js:40:5)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/OrganizerDashboard.test.js:79:11)
+      at call (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: Error: Unknown API
+          at Object.json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/OrganizerDashboard.test.js:59:34)
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as throw] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      Unknown API called: http://localhost:8080/users/profile
+
+      54 |     }
+      55 |
+    > 56 |     console.error("Unknown API called:", url);
+         |             ^
+      57 |     return Promise.resolve({
+      58 |       ok: false,
+      59 |       json: () => Promise.reject(new Error("Unknown API")),
+
+      at error (src/Tests/Organizertests/OrganizerDashboard.test.js:56:13)
+      at fetch (src/Organizer/TopBar.js:26:32)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at _next (src/Organizer/TopBar.js:2:1)
+      at src/Organizer/TopBar.js:2:1
+      at apply (src/Organizer/TopBar.js:24:26)
+      at fetchUserAvatar (src/Organizer/TopBar.js:40:5)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee2$ (src/Tests/Organizertests/OrganizerDashboard.test.js:94:11)
+      at call (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: Error: Unknown API
+          at Object.json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/OrganizerDashboard.test.js:59:34)
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as throw] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      Unknown API called: http://localhost:8080/users/profile
+
+      54 |     }
+      55 |
+    > 56 |     console.error("Unknown API called:", url);
+         |             ^
+      57 |     return Promise.resolve({
+      58 |       ok: false,
+      59 |       json: () => Promise.reject(new Error("Unknown API")),
+
+      at error (src/Tests/Organizertests/OrganizerDashboard.test.js:56:13)
+      at fetch (src/Organizer/TopBar.js:26:32)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at _next (src/Organizer/TopBar.js:2:1)
+      at src/Organizer/TopBar.js:2:1
+      at apply (src/Organizer/TopBar.js:24:26)
+      at fetchUserAvatar (src/Organizer/TopBar.js:40:5)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee3$ (src/Tests/Organizertests/OrganizerDashboard.test.js:107:11)
+      at call (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerDashboard.test.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: Error: Unknown API
+          at Object.json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/OrganizerDashboard.test.js:59:34)
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as throw] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+PASS src/Tests/Organizertests/SubmissionRatings.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      40 | describe("SubmissionRatings", () => {
+      41 |   it("renders rated submissions table after data loads", async () => {
+    > 42 |     render(
+         |           ^
+      43 |       <MemoryRouter>
+      44 |         <SubmissionRatings />
+      45 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/SubmissionRatings.test.js:42:11)
+      at call (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at _next (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      40 | describe("SubmissionRatings", () => {
+      41 |   it("renders rated submissions table after data loads", async () => {
+    > 42 |     render(
+         |           ^
+      43 |       <MemoryRouter>
+      44 |         <SubmissionRatings />
+      45 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/SubmissionRatings.test.js:42:11)
+      at call (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at _next (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/SubmissionRatings.test.js:2:1)
+
+PASS src/Tests/Organizertests/TopBar.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      47 | describe("TopBar", () => {
+      48 |   it("renders email from localStorage", async () => {
+    > 49 |     render(
+         |           ^
+      50 |       <MemoryRouter>
+      51 |         <TopBar />
+      52 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/TopBar.test.js:49:11)
+      at call (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at _next (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/TopBar.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      47 | describe("TopBar", () => {
+      48 |   it("renders email from localStorage", async () => {
+    > 49 |     render(
+         |           ^
+      50 |       <MemoryRouter>
+      51 |         <TopBar />
+      52 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/TopBar.test.js:49:11)
+      at call (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at _next (src/Tests/Organizertests/TopBar.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/TopBar.test.js:2:1)
+
+PASS src/Tests/Organizertests/Sidebar.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      25 | describe("Sidebar", () => {
+      26 |   it("renders sidebar links correctly", () => {
+    > 27 |     render(
+         |           ^
+      28 |       <MemoryRouter>
+      29 |         <Sidebar />
+      30 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at Object.<anonymous> (src/Tests/Organizertests/Sidebar.test.js:27:11)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      25 | describe("Sidebar", () => {
+      26 |   it("renders sidebar links correctly", () => {
+    > 27 |     render(
+         |           ^
+      28 |       <MemoryRouter>
+      29 |         <Sidebar />
+      30 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at Object.<anonymous> (src/Tests/Organizertests/Sidebar.test.js:27:11)
+
+FAIL test_participant/teampage.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/teampage.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | test.use({ browserName: 'chromium' });
+      4 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/teampage.spec.js:1:1)
+
+FAIL test_participant/rating.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/rating.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | test.use({ browserName: 'chromium' });
+      4 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/rating.spec.js:1:1)
+
+PASS src/Tests/Admintests/AdminProfile.test.js
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      45 | // 封装渲染
+      46 | const renderAdminProfile = () => {
+    > 47 |   render(
+         |         ^
+      48 |     <MemoryRouter>
+      49 |       <AdminProfile />
+      50 |     </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderAdminProfile (src/Tests/Admintests/AdminProfile.test.js:47:9)
+      at renderAdminProfile (src/Tests/Admintests/AdminProfile.test.js:56:5)
+      at call (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminProfile.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      45 | // 封装渲染
+      46 | const renderAdminProfile = () => {
+    > 47 |   render(
+         |         ^
+      48 |     <MemoryRouter>
+      49 |       <AdminProfile />
+      50 |     </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderAdminProfile (src/Tests/Admintests/AdminProfile.test.js:47:9)
+      at renderAdminProfile (src/Tests/Admintests/AdminProfile.test.js:56:5)
+      at call (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at _next (src/Tests/Admintests/AdminProfile.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Admintests/AdminProfile.test.js:2:1)
+
+FAIL test_participant/project.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/project.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | test.use({ browserName: 'chromium' });
+      4 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/project.spec.js:1:1)
+
+FAIL test_participant/profile.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/profile.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 |
+      4 | test.use({ browserName: 'chromium' });
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/profile.spec.js:1:1)
+
+FAIL test_participant/comments.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/comments.spec.js'
+
+      1 | // test_participant/comments.spec.js
+    > 2 | import { test, expect } from '@playwright/test';
+        | ^
+      3 |
+      4 | test.use({ browserName: 'chromium' });
+      5 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/comments.spec.js:2:1)
+
+FAIL test_participant/contest.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/contest.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | // 只在 Chromium 浏览器运行
+      4 | test.use({ browserName: 'chromium' });
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/contest.spec.js:1:1)
+
+PASS src/Tests/Organizertests/OrganizerContestList.test.js (33.133 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      34 |
+      35 | const renderWithRouter = () => {
+    > 36 |   render(
+         |         ^
+      37 |     <BrowserRouter>
+      38 |       <OrganizerContestList />
+      39 |     </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerContestList.test.js:36:9)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerContestList.test.js:50:5)
+      at call (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      34 |
+      35 | const renderWithRouter = () => {
+    > 36 |   render(
+         |         ^
+      37 |     <BrowserRouter>
+      38 |       <OrganizerContestList />
+      39 |     </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerContestList.test.js:36:9)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerContestList.test.js:50:5)
+      at call (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerContestList.test.js:2:1)
+
+PASS src/Tests/Organizertests/UploadMedia.test.js (33.19 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      42 | describe("UploadMedia Component", () => {
+      43 |   test("previews selected files", async () => {
+    > 44 |     render(
+         |           ^
+      45 |       <MemoryRouter>
+      46 |         <UploadMedia />
+      47 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/UploadMedia.test.js:44:11)
+      at call (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at _next (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      42 | describe("UploadMedia Component", () => {
+      43 |   test("previews selected files", async () => {
+    > 44 |     render(
+         |           ^
+      45 |       <MemoryRouter>
+      46 |         <UploadMedia />
+      47 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/UploadMedia.test.js:44:11)
+      at call (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at _next (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/UploadMedia.test.js:2:1)
+
+    console.error
+      Error fetching media: Error: Unknown API
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:24:27
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-mock/build/index.js:397:39
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-mock/build/index.js:404:13
+          at mockConstructor (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-mock/build/index.js:108:19)
+          at fetch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:21:25)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at _next (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at new Promise (<anonymous>)
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1
+          at fetchCurrentMedia (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:42:5)
+          at Object.create [as react-stack-bottom-frame] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+          at callback (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+          at runWithFiberInDEV (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+          at commitHookEffectListMount (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+          at commitHookPassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+          at flushPassiveEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+          at callback (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react/cjs/react.development.js:566:34)
+          at flushActQueue (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react/cjs/react.development.js:859:10)
+          at actImplementation (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/@testing-library/react/dist/act-compat.js:47:25)
+          at renderRoot (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/@testing-library/react/dist/pure.js:190:25)
+          at renderRoot (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/@testing-library/react/dist/pure.js:292:10)
+          at _callee$ (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:44:11)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at _next (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at new Promise (<anonymous>)
+          at Object.<anonymous> (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at Promise.then.completed (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/utils.js:298:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/utils.js:231:10)
+          at _callCircusTest (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:316:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:252:3)
+          at _runTestsForDescribeBlock (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:126:9)
+          at _runTestsForDescribeBlock (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:121:9)
+          at run (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:71:3)
+          at runAndTransformResultsToJestFormat (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+          at jestAdapter (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+          at runTestInternal (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-runner/build/runTest.js:367:16)
+          at runTest (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-runner/build/runTest.js:444:34)
+          at Object.worker (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-runner/build/testWorker.js:106:12)
+
+      35 |       }
+      36 |     } catch (err) {
+    > 37 |       console.error("Error fetching media:", err);
+         |               ^
+      38 |     }
+      39 |   }, [id]);
+      40 |
+
+      at error (src/Organizer/UploadMedia.js:37:15)
+      at call (src/Organizer/UploadMedia.js:2:1)
+      at Generator.tryCatch (src/Organizer/UploadMedia.js:2:1)
+      at Generator._invoke [as throw] (src/Organizer/UploadMedia.js:2:1)
+      at asyncGeneratorStep (src/Organizer/UploadMedia.js:2:1)
+      at asyncGeneratorStep (src/Organizer/UploadMedia.js:2:1)
+
+    console.error
+      Error fetching media: Error: Unknown API
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:24:27
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-mock/build/index.js:397:39
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-mock/build/index.js:404:13
+          at mockConstructor (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-mock/build/index.js:108:19)
+          at fetch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:21:25)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at _next (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1)
+          at new Promise (<anonymous>)
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:2:1
+          at fetchCurrentMedia (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/UploadMedia.js:42:5)
+          at Object.create [as react-stack-bottom-frame] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+          at callback (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+          at runWithFiberInDEV (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+          at commitHookEffectListMount (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+          at commitHookPassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13957:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13834:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+          at recursivelyTraversePassiveMountEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+          at commitPassiveMountOnFiber (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+          at flushPassiveEffects (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+          at callback (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react/cjs/react.development.js:566:34)
+          at flushActQueue (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/react/cjs/react.development.js:859:10)
+          at actImplementation (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/@testing-library/react/dist/act-compat.js:47:25)
+          at renderRoot (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/@testing-library/react/dist/pure.js:190:25)
+          at renderRoot (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/@testing-library/react/dist/pure.js:292:10)
+          at _callee2$ (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:61:11)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at _next (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at new Promise (<anonymous>)
+          at Object.<anonymous> (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Tests/Organizertests/UploadMedia.test.js:2:1)
+          at Promise.then.completed (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/utils.js:298:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/utils.js:231:10)
+          at _callCircusTest (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:316:40)
+          at _runTest (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:252:3)
+          at _runTestsForDescribeBlock (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:126:9)
+          at _runTestsForDescribeBlock (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:121:9)
+          at run (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/run.js:71:3)
+          at runAndTransformResultsToJestFormat (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+          at jestAdapter (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+          at runTestInternal (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-runner/build/runTest.js:367:16)
+          at runTest (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-runner/build/runTest.js:444:34)
+          at Object.worker (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-runner/build/testWorker.js:106:12)
+
+      35 |       }
+      36 |     } catch (err) {
+    > 37 |       console.error("Error fetching media:", err);
+         |               ^
+      38 |     }
+      39 |   }, [id]);
+      40 |
+
+      at error (src/Organizer/UploadMedia.js:37:15)
+      at call (src/Organizer/UploadMedia.js:2:1)
+      at Generator.tryCatch (src/Organizer/UploadMedia.js:2:1)
+      at Generator._invoke [as throw] (src/Organizer/UploadMedia.js:2:1)
+      at asyncGeneratorStep (src/Organizer/UploadMedia.js:2:1)
+      at asyncGeneratorStep (src/Organizer/UploadMedia.js:2:1)
+
+PASS src/Tests/Organizertests/ParticipantList.test.js (33.391 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      75 |
+      76 | const renderWithRouter = () => {
+    > 77 |   render(
+         |         ^
+      78 |     <MemoryRouter initialEntries={["/participant-list/test-competition"]}>
+      79 |       <Routes>
+      80 |         <Route path="/participant-list/:competitionId" element={<ParticipantList />} />
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/ParticipantList.test.js:77:9)
+      at renderWithRouter (src/Tests/Organizertests/ParticipantList.test.js:88:5)
+      at call (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at _next (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      75 |
+      76 | const renderWithRouter = () => {
+    > 77 |   render(
+         |         ^
+      78 |     <MemoryRouter initialEntries={["/participant-list/test-competition"]}>
+      79 |       <Routes>
+      80 |         <Route path="/participant-list/:competitionId" element={<ParticipantList />} />
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/ParticipantList.test.js:77:9)
+      at renderWithRouter (src/Tests/Organizertests/ParticipantList.test.js:88:5)
+      at call (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at _next (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/ParticipantList.test.js:2:1)
+
+PASS src/Tests/Organizertests/OrganizerContest.test.js (33.523 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      33 |
+      34 | const renderWithRouter = () => {
+    > 35 |   render(
+         |         ^
+      36 |     <BrowserRouter>
+      37 |       <OrganizerContest />
+      38 |     </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerContest.test.js:35:9)
+      at Object.renderWithRouter (src/Tests/Organizertests/OrganizerContest.test.js:44:5)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      33 |
+      34 | const renderWithRouter = () => {
+    > 35 |   render(
+         |         ^
+      36 |     <BrowserRouter>
+      37 |       <OrganizerContest />
+      38 |     </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at renderWithRouter (src/Tests/Organizertests/OrganizerContest.test.js:35:9)
+      at Object.renderWithRouter (src/Tests/Organizertests/OrganizerContest.test.js:44:5)
+
+    console.log
+      Sending payload: {
+        name: 'My Contest',
+        description: 'A test contest',
+        category: '',
+        startDate: '2025-05-01T10:00:00Z',
+        endDate: '2025-05-10T18:00:00Z',
+        isPublic: true,
+        status: 'UPCOMING',
+        allowedSubmissionTypes: [],
+        scoringCriteria: [],
+        participationType: 'INDIVIDUAL',
+        imageUrls: [],
+        introVideoUrl: ''
+      }
+
+      at log (src/Organizer/Contest.js:95:15)
+
+    console.error
+      Error: Not implemented: window.alert
+          at module.exports (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/browser/Window.js:870:7
+          at alert (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/Contest.js:108:9)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/Contest.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/Contest.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/Contest.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/Contest.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/Contest.js:2:1)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+        type: 'not implemented'
+      }
+
+      106 |       const data = await response.json();
+      107 |       if (response.ok) {
+    > 108 |         alert("🎉 Contest created successfully!");
+          |         ^
+      109 |         navigate(`/OrganizerContestList/${email}`);
+      110 |       } else {
+      111 |         alert("❌ Failed to create contest: " + (data.message || "Unknown error"));
+
+      at VirtualConsole.<anonymous> (node_modules/jest-environment-jsdom/build/index.js:65:23)
+      at alert (src/Organizer/Contest.js:108:9)
+      at call (src/Organizer/Contest.js:2:1)
+      at Generator.tryCatch (src/Organizer/Contest.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/Contest.js:2:1)
+      at asyncGeneratorStep (src/Organizer/Contest.js:2:1)
+      at asyncGeneratorStep (src/Organizer/Contest.js:2:1)
+
+PASS src/Tests/Organizertests/OrganizerEditContest.test.js (33.609 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      52 | describe("EditContest", () => {
+      53 |   test("renders contest details from API", async () => {
+    > 54 |     render(
+         |           ^
+      55 |       <MemoryRouter initialEntries={["/edit-contest?competitionId=test-id"]}>
+      56 |         <EditContest />
+      57 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:26:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/OrganizerEditContest.test.js:54:11)
+      at call (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      52 | describe("EditContest", () => {
+      53 |   test("renders contest details from API", async () => {
+    > 54 |     render(
+         |           ^
+      55 |       <MemoryRouter initialEntries={["/edit-contest?competitionId=test-id"]}>
+      56 |         <EditContest />
+      57 |       </MemoryRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at logDeprecation (node_modules/react-router/lib/deprecations.ts:37:5)
+      at logV6DeprecationWarnings (node_modules/react-router/lib/components.tsx:257:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15702:14)
+      at flushPendingEffects (node_modules/react-dom/cjs/react-dom-client.development.js:16228:11)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16079:21)
+      at flushSyncWorkAcrossRoots_impl (node_modules/react-dom/cjs/react-dom-client.development.js:15677:9)
+      at flushSpawnedWork (node_modules/react-dom/cjs/react-dom-client.development.js:15403:9)
+      at commitRoot (node_modules/react-dom/cjs/react-dom-client.development.js:14526:15)
+      at performWorkOnRoot (node_modules/react-dom/cjs/react-dom-client.development.js:16216:7)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/OrganizerEditContest.test.js:54:11)
+      at call (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at _next (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/OrganizerEditContest.test.js:2:1)
+
+    console.error
+      Error: Not implemented: window.alert
+          at module.exports (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+          at /Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/browser/Window.js:870:7
+          at alert (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/EditContest.js:141:9)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/EditContest.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/EditContest.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/EditContest.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/EditContest.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/EditContest.js:2:1)
+          at runNextTicks (node:internal/process/task_queues:60:5)
+          at listOnTimeout (node:internal/timers:545:9)
+          at processTimers (node:internal/timers:519:7) {
+        type: 'not implemented'
+      }
+
+      139 |       const data = await response.json();
+      140 |       if (response.ok) {
+    > 141 |         alert("✅ Contest updated successfully!");
+          |         ^
+      142 |         navigate(`/OrganizerContestList/${email}`);
+      143 |       } else {
+      144 |         alert("❌ Failed to update contest: " + (data.message || "Unknown error"));
+
+      at VirtualConsole.<anonymous> (node_modules/jest-environment-jsdom/build/index.js:65:23)
+      at alert (src/Organizer/EditContest.js:141:9)
+      at call (src/Organizer/EditContest.js:2:1)
+      at Generator.tryCatch (src/Organizer/EditContest.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/EditContest.js:2:1)
+      at asyncGeneratorStep (src/Organizer/EditContest.js:2:1)
+      at asyncGeneratorStep (src/Organizer/EditContest.js:2:1)
+
+PASS src/Tests/Organizertests/CheckSubmissions.test.js (33.69 s)
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      54 | describe("OrganizerSubmissions", () => {
+      55 |   it("renders and shows loading spinner", async () => {
+    > 56 |     render(
+         |           ^
+      57 |       <BrowserRouter>
+      58 |         <OrganizerSubmissions />
+      59 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:26:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/CheckSubmissions.test.js:56:11)
+      at call (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at _next (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      54 | describe("OrganizerSubmissions", () => {
+      55 |   it("renders and shows loading spinner", async () => {
+    > 56 |     render(
+         |           ^
+      57 |       <BrowserRouter>
+      58 |         <OrganizerSubmissions />
+      59 |       </BrowserRouter>
+
+      at warn (node_modules/react-router/lib/deprecations.ts:9:13)
+      at warnOnce (node_modules/react-router/lib/deprecations.ts:14:3)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (node_modules/react-router/lib/deprecations.ts:37:5)
+      at UNSAFE_logV6DeprecationWarnings (node_modules/react-router-dom/index.tsx:816:25)
+      at Object.create [as react-stack-bottom-frame] (node_modules/react-dom/cjs/react-dom-client.development.js:23949:20)
+      at callback (node_modules/react-dom/cjs/react-dom-client.development.js:1522:13)
+      at runWithFiberInDEV (node_modules/react-dom/cjs/react-dom-client.development.js:11905:29)
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom-client.development.js:12028:11)
+      at commitHookPassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13841:13)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:13815:11)
+      at recursivelyTraversePassiveMountEffects (node_modules/react-dom/cjs/react-dom-client.development.js:13853:11)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom-client.development.js:15737:9)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom-client.development.js:15379:15)
+      at callback (node_modules/react/cjs/react.development.js:566:34)
+      at flushActQueue (node_modules/react/cjs/react.development.js:859:10)
+      at actImplementation (node_modules/@testing-library/react/dist/act-compat.js:47:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:190:25)
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:292:10)
+      at _callee$ (src/Tests/Organizertests/CheckSubmissions.test.js:56:11)
+      at call (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at Generator.tryCatch (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at Generator._invoke [as next] (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at asyncGeneratorStep (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at _next (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+      at Object.<anonymous> (src/Tests/Organizertests/CheckSubmissions.test.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at runNextTicks (node:internal/process/task_queues:60:5)
+          at listOnTimeout (node:internal/timers:545:9)
+          at processTimers (node:internal/timers:519:7)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+    console.error
+      Failed to fetch user avatar: TypeError: response.json is not a function
+          at json (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:31:37)
+          at call (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator.tryCatch (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at Generator._invoke [as next] (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+          at asyncGeneratorStep (/Users/yangzhaoyi/Desktop/capstone-project-2025-t1-25t1-9900-w16a-danish/frontend/src/Organizer/TopBar.js:2:1)
+
+      34 |         }
+      35 |       } catch (error) {
+    > 36 |         console.error("Failed to fetch user avatar:", error);
+         |                 ^
+      37 |       }
+      38 |     };
+      39 |
+
+      at error (src/Organizer/TopBar.js:36:17)
+      at call (src/Organizer/TopBar.js:2:1)
+      at Generator.tryCatch (src/Organizer/TopBar.js:2:1)
+      at Generator._invoke [as next] (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+      at asyncGeneratorStep (src/Organizer/TopBar.js:2:1)
+
+-----------------------------|---------|----------|---------|---------|---------------------------------------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                   
+-----------------------------|---------|----------|---------|---------|---------------------------------------------------------------------
+All files                    |    64.6 |    43.83 |   63.83 |   65.79 |                                                                     
+ Admin                       |   62.89 |    47.39 |   66.15 |    63.5 |                                                                     
+  AdminAccountManage.js      |   75.55 |    39.13 |      75 |   77.27 | 59-62,78,98-103,123-132                                             
+  AdminCompetitionsManage.js |   74.19 |       45 |   68.42 |   74.57 | 75-78,101-105,125-128,137,166-184,264,306-326                       
+  AdminDashboard.js          |   94.59 |    73.52 |      90 |   94.44 | 43,255                                                              
+  AdminProfile.js            |    50.7 |     42.5 |   66.66 |   50.72 | 42,60-61,82-85,90,94-100,105-136,140-145,151                        
+  Sidebar.js                 |   23.07 |    28.57 |      20 |   23.07 | 12-20,25-33,38-45,49-56                                             
+  TopBar.js                  |   62.06 |     62.5 |   42.85 |   66.66 | 33,47-58,62-63                                                      
+ Organizer                   |   65.21 |    42.38 |    63.1 |   66.62 |                                                                     
+  CheckSubmissions.js        |   65.38 |    52.63 |   47.36 |    67.1 | 75-78,92-95,106-107,111-112,123-149,205,242-281,293                 
+  Contest.js                 |      82 |    42.85 |   73.68 |   84.09 | 62-65,111-115,213-276                                               
+  ContestList.js             |   55.71 |    57.69 |   34.48 |      60 | 51-54,86,90-112,117-119,165-179,193,199,241-292                     
+  Dashboard.js               |   98.46 |     55.1 |     100 |   98.33 | 104                                                                 
+  EditContest.js             |   74.57 |       50 |   52.17 |   79.24 | 64,69-70,84-86,91-94,144-147,216,229                                
+  OrganizerAddJudge.js       |   73.33 |    44.82 |   84.21 |   74.11 | 47,68-70,94-96,111-112,117-122,146-155,179-183,245-260              
+  ParticipantList.js         |   56.25 |    37.64 |   61.11 |   56.88 | 70-73,96-99,106-122,127-150,160,170,177-179,187-193,221-244,319-336 
+  Profile.js                 |    52.8 |    43.18 |   68.75 |   52.87 | 43,60-63,84-87,96-102,107-138,142-147,169-174,183,238-242           
+  Sidebar.js                 |      88 |    77.77 |   85.71 |      88 | 25-26,62                                                            
+  SubmissionRatings.js       |   55.73 |    14.58 |   43.75 |   58.62 | 48-51,65,78-88,95,118-127,155-182                                   
+  TopBar.js                  |    93.1 |     87.5 |   85.71 |   96.29 | 53                                                                  
+  UploadMedia.js             |   33.78 |    19.04 |   58.33 |   34.78 | 26-34,52-72,77-98,103-135,166-169                                   
+-----------------------------|---------|----------|---------|---------|---------------------------------------------------------------------
+
+Summary of all failing tests
+FAIL test_participant/teampage.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/teampage.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | test.use({ browserName: 'chromium' });
+      4 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/teampage.spec.js:1:1)
+
+FAIL test_participant/rating.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/rating.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | test.use({ browserName: 'chromium' });
+      4 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/rating.spec.js:1:1)
+
+FAIL test_participant/project.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/project.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | test.use({ browserName: 'chromium' });
+      4 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/project.spec.js:1:1)
+
+FAIL test_participant/profile.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/profile.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 |
+      4 | test.use({ browserName: 'chromium' });
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/profile.spec.js:1:1)
+
+FAIL test_participant/comments.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/comments.spec.js'
+
+      1 | // test_participant/comments.spec.js
+    > 2 | import { test, expect } from '@playwright/test';
+        | ^
+      3 |
+      4 | test.use({ browserName: 'chromium' });
+      5 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/comments.spec.js:2:1)
+
+FAIL test_participant/contest.spec.js
+  ● Test suite failed to run
+
+    Cannot find module '@playwright/test' from 'test_participant/contest.spec.js'
+
+    > 1 | import { test, expect } from '@playwright/test';
+        | ^
+      2 |
+      3 | // 只在 Chromium 浏览器运行
+      4 | test.use({ browserName: 'chromium' });
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (test_participant/contest.spec.js:1:1)
+
+
+Test Suites: 6 failed, 16 passed, 22 total
+Tests:       53 passed, 53 total
+Snapshots:   0 total
+Time:        34.662 s
+Ran all test suites.

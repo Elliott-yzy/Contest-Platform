@@ -1,0 +1,166 @@
+.participant-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 0px 40px;
+    max-width: 1200px;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #000000;  /* Black border */
+}
+
+.participant-topbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.participant-topbar-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.participant-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 rgba(255, 166, 128, 0.8);
+  animation: avatarGlow 3s ease-in-out infinite; /* 🔥 glowing breathing animation */
+}
+
+/* Avatar glow breathing animation */
+@keyframes avatarGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 166, 128, 0.8);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 10px 4px rgba(255, 166, 128, 0.6);
+    transform: scale(1.05); /* Slightly scale up */
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 166, 128, 0.8);
+    transform: scale(1);
+  }
+}
+
+.participant-topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between avatar and logout button */
+}
+
+.participant-logout-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.participant-logout-icon {
+    font-size: 24px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.participant-logout-icon:hover {
+    color: rgb(76, 0, 255);
+}
+
+/* Text background rectangle */
+.participant-topbar-rect {
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.topbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between avatar and logout button */
+}
+
+.logout-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logout-icon {
+    font-size: 24px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+    color: rgb(76, 0, 255);
+}
+
+/* Text background rectangle */
+.topbar-rect {
+    background-color: transparent !important; /* Force remove background color */
+    margin: 0; /* Prevent extra margins */
+    padding: 0;
+}
+
+.participant-topbar-rect {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.participant-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.participant-welcome-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Left logo and title */
+.participant-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo image */
+.participant-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  animation: logoFloat 4s ease-in-out infinite; /* ⭐ add a subtle floating animation to the logo */
+}

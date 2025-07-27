@@ -1,0 +1,138 @@
+/* 卡片列表容器 */
+.contest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* 单个卡片样式 */
+  .contest-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    
+    /* 关键：添加过渡动画，使放大/阴影变化更平滑 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* 鼠标悬停时放大并添加更明显的阴影 */
+  .contest-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .card-header {
+    background-color: #e0e7ff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-image-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .organizer {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 16px;
+  }
+  
+  /* 卡片底部：左边投票信息，右边按钮组 */
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* 投票信息区：旗帜图标与数字 */
+  .vote-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flag-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+  
+  }
+  
+  .vote-count {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* 按钮组 */
+  .button-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .vote-button,
+  .join-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .vote-button {
+    background-color: #e2e8f0;
+    border: 1px solid #555!important; /* 黑色边框 */
+    color: #555!important;           /* 黑色字体 */
+  }
+  
+  .vote-button:hover {
+    background-color: #cbd5e1;
+    border-color: #555!important;     /* 悬停时仍保持黑色边框 */
+    color: #555!important;           /* 悬停时黑色字体 */
+  }
+  
+  .join-button {
+    background-color: #ffa680 !important;
+    color: #fff;
+  }
+  
+  .join-button:hover {
+    background-color: #6f1b00 !important;
+  }
+  

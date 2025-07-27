@@ -1,0 +1,35 @@
+/* Container layout: Sidebar on the left, Content in the middle, Team on the right */
+.participant-team-container {
+  display: flex;
+}
+
+/* Flexible middle content area */
+.participant-team-content {
+  flex: 2;  /* Originally was 1 */
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Team sidebar */
+.participant-team-sidebar {
+  width: 380px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Team card sticky effect */
+.participant-team-sticky {
+  position: sticky;
+  top: 80px; /* Adjust based on TopBar height */
+}
+
+@media (max-width: 1024px) {
+  .participant-team-sidebar {
+    display: none;
+  }
+}

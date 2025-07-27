@@ -1,0 +1,45 @@
+.pu-team-detail-container {
+    max-width: 960px;
+    margin: 40px auto;
+    margin-top: 100px;
+    padding: 40px 30px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+  }
+  
+  .pu-submission-card {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .pu-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #632713;
+    margin-bottom: 15px;
+  }
+  
+  .pu-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .pu-sub-label {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .pu-back-button {
+    margin-bottom: 20px;
+    color: #632713;
+    text-transform: none;
+    font-weight: bold;
+  }
+  
