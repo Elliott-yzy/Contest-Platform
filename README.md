@@ -1,5 +1,9 @@
 # 🏆 Project Contest Platform
 
+> **🏅 Award Recognition**  
+> This project was awarded **Best Project in AI for Education Award – Runner-up** at **Coding Fest 2025**,  
+> organised by the **School of Computer Science, The University of Sydney** and sponsored by **Atlassian** and **Flow Traders**.
+
 An enterprise-grade **Competition Management Platform** enabling individuals and teams to create, register, manage, and participate in competitions.  
 It supports **multi-judge scoring**, **dynamic participation modes** (individual/team), and is ideal for real-world scenarios such as innovation challenges, hackathons, academic contests, and open competitions.  
 Designed with **scalability**, **modularity**, and **high extensibility** to meet complex competition management needs.
@@ -18,6 +22,7 @@ Designed with **scalability**, **modularity**, and **high extensibility** to mee
 - [Tech Stack](#%EF%B8%8F-tech-stack)
 - [Database Structure](#-database-structure-core-tables)
 - [Author & Credits](#-author--credits)
+- [Awards & Recognition](#-awards--recognition)
 - [License & Contact](#-license--contact)
 
 ---
@@ -127,6 +132,7 @@ Jenkins enables true one-click automated build, test, and deployment for this mi
 
 ## 🎯 Project Highlights
 
+- 🏅 **Awarded Best Project in AI for Education Award – Runner-up (Coding Fest 2025, The University of Sydney)**
 - 🚀 Fully modular and scalable microservices architecture
 - 🛡️ Enterprise-grade authentication and role-based authorization
 - ⚡ Asynchronous event-driven design using RabbitMQ
@@ -275,6 +281,16 @@ This repository is maintained by **Elliott-yzy(Zhaoyi Yang)**, one of the core c
 - Integrated backend APIs into the frontend, including login, registration, and competition workflows
 - Handled dynamic routing and role-based UI rendering
 - Wrote the user documentation and this README for project presentation
+
+---
+
+## 🏅 Awards & Recognition
+
+| Award | Event | Organiser | Date |
+|-------|-------|-----------|------|
+| Best Project in AI for Education Award – Runner-up | Coding Fest 2025 | The University of Sydney, School of Computer Science | 29 July 2025 |
+
+![Certificate](./Coding%20Fest%202025.jpg)
 
 ---
 
